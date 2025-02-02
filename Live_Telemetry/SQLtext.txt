@@ -1,0 +1,12 @@
+CREATE DATABASE Live_Telemetry;
+
+USE Live_Telemetry;
+
+CREATE TABLE telemetry_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    temperature FLOAT NOT NULL,
+    humidity FLOAT NOT NULL,
+    water_level FLOAT NOT NULL,
+    message VARCHAR(255) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
